@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weight Converter WIth JS & Bootstrap 4</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body style="background-color:blue;">
+    <h1 class="text-center">Simple Weight Converter With JS & Bootstrap 4</h1><br><br>
+    <div class="container w-50">
+       <form>
+           <div class="form-group">
+            <input type="number" name="user_number" placeholder="Enter KiloGrams Number" 
+            class="form-control" id='userNum' oninput="cal(this)">
+           </div>
+        </form>
+        <div id='all_card'>
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h3>Gram : </h3>
+                    <div id="gram_display"></div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h3>MilliGram : </h3>
+                    <div id="mgm_display"></div>
+                </div>
+            </div> 
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h3>Ounce : </h3>
+                    <div id="ounce_display"></div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h3>Pound : </h3>
+                    <div id="pound_display"></div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-block">
+                    <h3>Tons : </h3>
+                    <div id="ton_display"></div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
